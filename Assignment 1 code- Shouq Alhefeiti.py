@@ -3,6 +3,7 @@ class Passenger:
 
     # Constructor
     def __init__(self, name, ticket_class, from_location, to_location, flight, date, time, gate, boarding_time, seat, arrival_time, terminal, electronic_ticket):
+        #initialize passenger attributes
         self.__name = name
         self.__ticket_class = ticket_class
         self.__from_location = from_location
@@ -118,6 +119,7 @@ class Flight:
 
     # Constructor
     def __init__(self, flight_number, departure_time, arrival_time, departure_location, arrival_location):
+        #initialize flight details
         self.__flight_number = flight_number
         self.__departure_time = departure_time
         self.__arrival_time = arrival_time
@@ -161,6 +163,7 @@ class BoardingPass:
 
     # Constructor
     def __init__(self, passenger, flight, gate, boarding_time):
+        #initialize boarding pass details
         self.__passenger = passenger
         self.__flight = flight
         self.__gate = gate
@@ -197,6 +200,7 @@ class Staff:
 
     # Constructor
     def __init__(self, name, ID, role):
+        #initialize staff details
         self.__name = name
         self.__ID = ID
         self.__role = role
